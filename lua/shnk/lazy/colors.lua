@@ -1,5 +1,14 @@
 return {
     {
+        "ellisonleao/gruvbox.nvim",
+        name = "gruvbox",
+        priority = 1000, 
+        config = true,
+        init = function()
+            vim.cmd.colorscheme 'gruvbox'
+        end,
+    },
+    {
         "rose-pine/neovim",
         name = "rose-pine",
         config = function()
@@ -10,7 +19,7 @@ return {
             })
         end,
         init = function()
-            vim.cmd.colorscheme 'rose-pine'
+            -- vim.cmd.colorscheme 'rose-pine'
         end,
     },
 }
